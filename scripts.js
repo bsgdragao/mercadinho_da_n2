@@ -8,7 +8,6 @@ function visibleLoginFalse() {
 }
 
 function loginForm() {
-    var done = 0;
     var idBtnLogin = document.getElementById('formProds');
     var idBtn = document.getElementById('myLogin');
     var username = document.getElementById('usernameL').value;
@@ -19,77 +18,42 @@ function loginForm() {
         idBtn.style.visibility = 'hidden';
         idBtnLogin.style.visibility = 'visible';
         done = 1;
-    }
-    if (done == 0) {
+    } else {
         alert("Senha ou Usuário inválido.");
     }
 }
 
-function validar_form_contato() {
-    var nome = formcontato.nome.value;
-    var preco = formcontato.preco.value;
-    var quantidade = formcontato.quantidade.value;
-    var dataatual = formcontato.dataatual.value;
-    var validade = formcontato.validade.value;
-
-    const diffTime = Math.abs(validade - dataatual);
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    console.log(diffDays);
-
-    var fotoproduto = formcontato.fotoproduto.value;
-    var categoria = selectCat.categoria.value;
+function validaProductForm() {
+    var preco = document.getElementById('preco').value;
+    var quantidade = document.getElementById('quantidade').value;
 
 
-    if (nome == "") {
-        alert("Campo nome é obrigatorio");
-        formcontato.nome.focus();
-        return false;
-    }
-    if (preco == "") {
-        alert("Campo Preco é obrigatorio");
-        formcontato.preco.focus();
-        return false;
-    }
+    validade = document.getElementById('validade').value;
+
+    var today = new Date(Date());
+    var validade = new Date(document.getElementById("validade").value);
+    var result = parseInt((validade - today) / (24 * 3600 * 1000));
+
+
+    console.log(validade);
+
     if (preco <= 0) {
-        alert("preco valor inválido ");
-        formcontato.preco.focus();
+        alert("Informe um preço válido!");
+        document.getElementById('preco').focus();
         return false;
     }
-    if (quantidade == "" || quantidade <= 0) {
-        alert("Campo Quantidade é obrigatorio");
-        formcontato.quantidade.focus();
+    if (quantidade <= 0) {
+        alert("Campo Quantidade é obrigatorio!");
+        document.getElementById('quantidade').focus();
+        return false;
+        done = 1;
+    }
+    if (result <= 7) {
+        alert("Não é possível vender produtos que vão vencer a menos de 7 dias!");
+        document.getElementById('validade').focus();
         return false;
     }
-    if (dataatual == "") {
-        alert("Campo Data Atual é obrigatorio");
-        formcontato.dataatual.focus();
-        return false;
-    }
-    if (validade == "") {
-        alert("Campo Validade  do Produto é obrigatorio");
-        formcontato.validade.focus();
-        return false;
-    }
-    if (validade <= dataatual) {
-        alert("Campo Informe uma Data Valida é obrigatorio");
-        formcontato.validade.focus();
-        return false;
-    }
-    if (diffDays <= 7) {
-        alert("Produto vence em menos de 1 semana, não pode ser vendido!");
-        formcontato.validade.focus();
-        return false;
-    }
-    if (fotoproduto == "") {
-        alert("Campo inserir Foto do Produto é obrigatorio");
-        formcontato.fotoproduto.focus();
-        return false;
-    }
-    if (categoria == "") {
-        alert("Campo inserir Foto do Produto é obrigatorio");
-        formcontato.fotoproduto.focus();
-        return false;
-    }
+
 }
 
 function alertSucess() {

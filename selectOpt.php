@@ -1,7 +1,7 @@
-<div id="slectForm">
-<label for="categoria">Categoria do produto: </label>
+<div id="selectForm">
+<p><label for="categoria">Categoria:  &nbsp</label>
     <select name="selectCat" required>
-        <option value="">Selecione...</option>
+        <option value="">Selecione...</option></p>
         <optgroup label="Categoria">
             <option value="Aves">Aves</option>
             <option value="Higiene">Bomboniere</option>
