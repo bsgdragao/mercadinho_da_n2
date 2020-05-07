@@ -1,0 +1,29 @@
+CREATE TABLE nivelhierarquico (
+    Nivel VARCHAR(50) PRIMARY KEY NOT NULL ,
+    );
+    
+CREATE TABLE funcionarios (
+    codigo INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Nome VARCHAR(50),
+    CPF VARCHAR(11),
+    Cargo VARCHAR(50),
+    Nascimento VARCHAR(50),
+    Nivel VARCHAR(50),
+    FOREIGN KEY (Nivel) REFERENCES nivelhierarquico(Nivel)
+    );
+
+20:26
+
+INSERT INTO nivelhierarquico VALUES ("Bebidas") , (2, "Eletrônicos");
+
+
+
+SELECT p.codigo, p.nome , 
+	(	SELECT SUM(pp2.quantidade) 
+        FROM pedidos_produtos pp2 
+     	WHERE pp2.codProduto = p.codigo 
+    ) AS qtdVendida
+FROM produtos p
+WHERE EXISTS ( SELECT pp.codProduto
+               FROM pedidos_produtos pp
+               WHERE pp.codProduto = p.codigo AND pp.quantidade > 0 )

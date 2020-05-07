@@ -1,0 +1,133 @@
+#menu {
+    background-color: #aaa9ad;
+    text-decoration-color: aliceblue;
+    font-size: 30px;
+    padding: 0.2%;
+    padding-left: 5%;
+}
+
+#adminButtons {
+    visibility: hidden;
+    background-color: #aaa9ad;
+    text-decoration-color: aliceblue;
+    font-size: 30px;
+    padding: 0.2%;
+    padding-left: 5%;
+}
+
+#btHome {
+    background-color: #48c4e8;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#btCatalog {
+    background-color: #426b89;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#btAdmin {
+    background-color: #81B66A;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#btLogin {
+    background-color: #6e4e3f;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#indexBody {
+    background-attachment: fixed;
+    background-image: url(./../images/feira.jpg);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center center;
+    color: white;
+}
+
+#footer {
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #426b89;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: right;
+}
+
+#myLogin {
+    visibility: visible;
+    text-align: center;
+}
+
+#titleFormLogin {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(14, 10, 10);
+    color: rgb(38, 219, 38);
+    font-weight: lighter;
+    font-size: xx-large;
+    background-color: rgb(151, 155, 155);
+}
+
+#loginTitle {
+    padding-top: -4%;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(17, 53, 53);
+    color: rgb(38, 219, 38);
+    font-weight: lighter;
+    background-color: rgb(151, 155, 155);
+}
+
+.bt_Cancel {
+    background-color: #df3737;
+    color: aliceblue;
+}
+
+.bt_Login {
+    background-color: #6ebd61;
+    color: aliceblue;
+}
+
+#formProds {
+    visibility: hidden;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#btEnvProds {
+    padding-left: 6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 6%;
+    display: block;
+    margin: 0 auto;
+    font-size: xx-large;
+    font-weight: lighter;
+    color: #217719;
+    text-shadow: 1px 1px white, -1px -1px #333;
+}
+
+p {
+    color: #0b70f5;
+    font-size: 150%;
+    background-color: rgb(151, 155, 155);
+}
+
+#building {
+    padding-top: 6%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+}
