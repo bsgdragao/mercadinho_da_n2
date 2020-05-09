@@ -1,5 +1,5 @@
 <div id="selectForm">
-<p><label for="categoria">Categoria:  &nbsp</label>
+<p><label for="categoria">Categoria: &nbsp &nbsp &nbsp</label>
     <select name="selectCat" required>
         <option value="">Selecione...</option></p>
         <optgroup label="Categoria">

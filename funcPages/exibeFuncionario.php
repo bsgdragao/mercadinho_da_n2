@@ -7,12 +7,9 @@
     <link rel="stylesheet" type="text/css" href="./../utils/style.css">
     <title>Mercadinho da N2</title>
 </head>
-<body id="BodyFuncionarios">
     <div id="divBodyFuncionarios">
         <h1 id="funcTitle"> Manutenção de funcionários </h1>
         <?php  require_once "./../utils/menuFunc.php"; ?>     
 
     </div>
-    
-</body>
 </html>
