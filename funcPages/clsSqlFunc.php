@@ -8,7 +8,7 @@ $cargo = $_POST['cargoFunc'];
 $nascimento = $_POST['nascimentoFunc'];
 $nivel = $_POST['selectNivel'];
 
-$query =  "INSERT INTO funcionarios VALUES ($nome', '$cpf', '$cargo','$nascimento', '$nivel')";
+$query =  "INSERT INTO funcionarios VALUES ('$nome', '$cpf', '$cargo','$nascimento', '$nivel')";
 Conexao::executar( $query );
 
 
