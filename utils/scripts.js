@@ -55,6 +55,36 @@ function validaProductForm() {
 
 }
 
+function validaFuncForm() {
+
+    var cpf = document.getElementById('cpfFunc').value;
+
+    nascimento = document.getElementById('nascimentoFunc').value;
+
+    var today = new Date(Date());
+    var nascimento = new Date(document.getElementById("nascimentoFunc").value);
+    var result = parseInt((validade - today) / (24 * 3600 * 1000));
+
+    var teste = 0;
+
+    if (teste == 0) {
+        alert("Teste ok!");
+        document.getElementById('cpfFunc').focus();
+        return false;
+    }
+    if (cpf.length <= 10) {
+        alert("CPF incorreto!");
+        document.getElementById('cpfFunc').focus();
+        return false;
+    }
+    if (result <= 6570) {
+        alert("Não é possível cadastrar menores de 18 anos!");
+        document.getElementById('nascimentoFunc').focus();
+        return false;
+    }
+
+}
+
 function alertSucess() {
     alert("Dados salvos com sucesso!");
 }
