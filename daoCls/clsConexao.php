@@ -8,7 +8,7 @@ class Conexao{
     private static $banco = "mercadinho_da_n2";
 
     private static function abrir(){
-        $conn = mysqli_connect(self::$local , self::$user, self::$senha , self::$banco );
+        $conn = mysqli_connect(self::$local , self::$user, self::$senha , self::$banco )or die('Erro ao conectar ao banco de dados');
         if( $conn ) {
             return $conn;
         }else{
@@ -32,7 +32,7 @@ class Conexao{
     public static function executar($query){
         $conn = self::abrir();
         if( $conn ){
-            mysqli_query($conn, $query);
+            mysqli_query($conn, $query) or die("Erro ao tentar cadastrar registro");
             self::fechar($conn);
         }     
     }

@@ -1,6 +1,6 @@
 <div id="selectForm">
-<p><label for="categoria">Categoria: &nbsp &nbsp &nbsp</label>
-    <select name="selectCat" id="selectCat" required>
+<p><label for="selCategoria">Categoria: &nbsp &nbsp &nbsp</label>
+    <select name="categoria" id="categoria" required>
         <option value="">Selecione...</option></p>
         <optgroup label="Categoria">
             <option value="Aves">Aves</option>
