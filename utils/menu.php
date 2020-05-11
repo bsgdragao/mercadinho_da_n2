@@ -9,10 +9,10 @@
     
 </head>
 <body>
-  <div id="menu">
-    <a href="http://localhost/mercadinho_da_n2/index.php" ><button id="btHome">Home</button></a>
-    <a href="http://localhost/mercadinho_da_n2/initialPages/building.php"><button id="btCatalog">Catálogo</button></a>
-    <a href="http://localhost/mercadinho_da_n2/initialPages/adminPage.php"><button id="btAdmin">Administrativo</button></a>
-  </div>   
+    <div id="menu">
+        <a href="http://localhost/mercadinho_da_n2/index.php" ><button id="btHome">Home</button></a>
+        <a href="http://localhost/mercadinho_da_n2/initialPages/building.php"><button id="btCatalog">Catálogo</button></a>
+        <a href="http://localhost/mercadinho_da_n2/initialPages/adminPage.php"><button id="btAdmin">Administrativo</button></a>
+    </div>   
 </body>
 </html> 

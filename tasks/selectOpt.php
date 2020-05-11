@@ -1,24 +1,24 @@
 <div id="selectForm">
 <p><label for="categoria">Categoria: &nbsp &nbsp &nbsp</label>
-    <select name="selectCat" required>
+    <select name="selectCat" id="selectCat" required>
         <option value="">Selecione...</option></p>
         <optgroup label="Categoria">
             <option value="Aves">Aves</option>
-            <option value="Higiene">Bomboniere</option>
-            <option value="Higiene">Cereais</option>
-            <option value="Higiene">Cama, mesa e banho</option>
-            <option value="Higiene">Carnes</option>
-            <option value="Higiene">Casa e Jardim</option>
-            <option value="Higiene">Enlatados</option>
-            <option value="Higiene">Dietéticos</option>
-            <option value="Higiene">Farinhas</option>
-            <option value="Higiene">Ferragem</option>
+            <option value="Bebidas">Bebidas</option>
+            <option value="Bomboniere">Bomboniere</option>
+            <option value="Cereais">Cereais</option>
+            <option value="Cama, mesa e banho">Cama, mesa e banho</option>
+            <option value="Carnes">Carnes</option>
+            <option value="Casa e Jardim">Casa e Jardim</option>
+            <option value="Enlatados">Enlatados</option>
+            <option value="Farinhas">Farinhas</option>
+            <option value="Ferragem">Ferragem</option>
             <option value="Higiene">Higiene</option>
-            <option value="Higiene">Lactínios</option>
-            <option value="Higiene">Padaria</option>
-            <option value="Higiene">Peixes</option>
-            <option value="Higiene">Pets</option>
-            <option value="Limpeza">Produtos de Limpeza</option>            
+            <option value="Lactínios">Lactínios</option>
+            <option value="Padaria">Padaria</option>
+            <option value="Peixes">Peixes</option>
+            <option value="Pets">Pets</option>
+            <option value="Produtos de Limpeza">Produtos de Limpeza</option>            
         </optgroup>         
     </select>   
 </div>

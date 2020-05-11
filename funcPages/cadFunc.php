@@ -1,11 +1,11 @@
 <?php
 
-include "clsConexao.php";
+include "./../daoCls/clsConexao.php";
 
 $nome = $_POST['nomeFunc'];
 $cpf = $_POST['cpfFunc'];
 $cargo = $_POST['cargoFunc'];
-$nascimento = $_POST['nascimentoFunc'];
+$nascimento = $_POST['nascimento'];
 $nivel = $_POST['selectNivel'];
 $strcon = mysqli_connect('localhost','root','','mercadinho_da_n2') or die('Erro ao conectar ao banco de dados');
 $sql = "INSERT INTO funcionarios VALUES ";

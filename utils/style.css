@@ -40,6 +40,35 @@
     border: #333;
 }
 
+#divTblFunc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#tbl_exibeFunc {
+    padding: 10%;
+    border: solid 1px black;
+    border-color: #ebedf0;
+    color: aliceblue;
+    background-color: #aaa9ad;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+}
+
+#tbl_exibeFunc tr {
+    background-color: rgb(70, 66, 66);
+}
+
+#tbl_exibeFunc td {
+    padding: 1%;
+}
+
+#tbl_exibeFunc caption {
+    color: #6e4e3f;
+}
+
 #formFunc {
     align-items: center;
     padding-left: 12%;
@@ -120,7 +149,7 @@
 }
 
 #formProds {
-    visibility: hidden;
+    visibility: visible;
     padding-left: 20%;
     padding-right: 20%;
 }

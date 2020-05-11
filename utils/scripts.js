@@ -25,15 +25,10 @@ function loginForm() {
 function validaProductForm() {
     var preco = document.getElementById('preco').value;
     var quantidade = document.getElementById('quantidade').value;
-
-
     validade = document.getElementById('validade').value;
-
     var today = new Date(Date());
     var validade = new Date(document.getElementById("validade").value);
     var result = parseInt((validade - today) / (24 * 3600 * 1000));
-
-
     console.log(validade);
 
     if (preco <= 0) {
@@ -55,36 +50,25 @@ function validaProductForm() {
 
 }
 
+function alertSucess() {
+    alert("Dados salvos com sucesso!");
+}
+
 function validaFuncForm() {
-
-    var cpf = document.getElementById('cpfFunc').value;
-
-    nascimento = document.getElementById('nascimentoFunc').value;
-
-    var today = new Date(Date());
-    var nascimento = new Date(document.getElementById("nascimentoFunc").value);
-    var result = parseInt((validade - today) / (24 * 3600 * 1000));
-
     var teste = 0;
-
-    if (teste == 0) {
-        alert("Teste ok!");
-        document.getElementById('cpfFunc').focus();
-        return false;
-    }
+    var cpf = document.getElementById('cpfFunc').value;
+    nascimento = document.getElementById('nascimento').value;
+    var today = new Date(Date());
+    var nascimento = new Date(document.getElementById("nascimento").value);
+    var result = parseInt((today - nascimento) / (24 * 3600 * 1000));
     if (cpf.length <= 10) {
         alert("CPF incorreto!");
         document.getElementById('cpfFunc').focus();
         return false;
     }
     if (result <= 6570) {
-        alert("Não é possível cadastrar menores de 18 anos!");
-        document.getElementById('nascimentoFunc').focus();
+        alert("Não é possível cadastrar menores de 18 anos!" + result);
+        document.getElementById('nascimento').focus();
         return false;
     }
-
-}
-
-function alertSucess() {
-    alert("Dados salvos com sucesso!");
 }

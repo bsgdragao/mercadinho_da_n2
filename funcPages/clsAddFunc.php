@@ -1,11 +1,11 @@
 <?php
 
- require_once "clsConexao.php";
+ require_once "./../daoCls/clsConexao.php";
 
 $nome = $_POST['nomeFunc'];
 $cpf = $_POST['cpfFunc'];
 $cargo = $_POST['cargoFunc'];
-$nascimento = $_POST['nascimentoFunc'];
+$nascimento = $_POST['nascimento'];
 $nivel = $_POST['selectNivel'];
 
 $query =  "INSERT INTO funcionarios VALUES ('$nome', '$cpf', '$cargo','$nascimento', '$nivel')";
